@@ -158,11 +158,11 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
           const importedProds = data.products || [];
           const importedFlows = data.cashflows || [];
           
-          if (importedProds.length > 0) {
+          if (Array.isArray(importedProds)) {
             setProducts(importedProds);
             localStorage.setItem('tiffany_products', JSON.stringify(importedProds));
           }
-          if (importedFlows.length > 0) {
+          if (Array.isArray(importedFlows)) {
             setCashFlows(importedFlows);
             localStorage.setItem('tiffany_cashflows', JSON.stringify(importedFlows));
           }

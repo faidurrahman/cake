@@ -553,22 +553,22 @@ export default function CashBook({
                         </button>
 
                         {/* Trash Button */}
-                        {cf.referenceId ? (
-                          <span className="text-[9px] text-stone-400 font-semibold uppercase bg-stone-100 px-1.5 py-0.5 rounded border" title="Arus kas dari Mesin POS tidak dapat dihapus manual">
+                        <button
+                          onClick={() => {
+                            showConfirm('Apakah Anda yakin ingin menghapus catatan Buku Kas ini?', () => {
+                              onDeleteCashFlow(cf.id);
+                            });
+                          }}
+                          className="p-1 text-[#EF4444]/60 hover:text-[#EF4444] hover:bg-red-50 rounded-md transition-colors cursor-pointer"
+                          title="Hapus Catatan"
+                        >
+                          <Trash2 className="w-3.5 h-3.5" />
+                        </button>
+
+                        {cf.referenceId && (
+                          <span className="text-[9px] text-stone-400 font-semibold uppercase bg-stone-100 px-1.5 py-0.5 rounded border" title="Arus kas dari Mesin POS">
                             POS
                           </span>
-                        ) : (
-                          <button
-                            onClick={() => {
-                              showConfirm('Apakah Anda yakin ingin menghapus catatan Buku Kas ini?', () => {
-                                onDeleteCashFlow(cf.id);
-                              });
-                            }}
-                            className="p-1 text-[#EF4444]/60 hover:text-[#EF4444] hover:bg-red-50 rounded-md transition-colors cursor-pointer"
-                            title="Hapus Catatan"
-                          >
-                            <Trash2 className="w-3.5 h-3.5" />
-                          </button>
                         )}
                       </div>
                     </td>

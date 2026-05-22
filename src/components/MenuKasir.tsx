@@ -15,14 +15,14 @@ const generateReceiptPDF = (trx: any) => {
   doc.setFont("Helvetica", "bold");
   doc.setFontSize(13);
   doc.setTextColor(74, 53, 37); // #4A3525
-  doc.text("CONTOH CAKE", 40, 12, { align: "center" });
+  doc.text("CAKE CU", 40, 12, { align: "center" });
 
   doc.setFont("Helvetica", "italic");
   doc.setFontSize(8);
   doc.setTextColor(140, 125, 112); // Secondary color
   doc.text("Patisserie & Cakes", 40, 16, { align: "center" });
   doc.setFont("Helvetica", "normal");
-  doc.text("Ruko Contoh, Jakarta", 40, 20, { align: "center" });
+  doc.text("Ruko Cake Cu, Jakarta", 40, 20, { align: "center" });
 
   // Divider Line
   doc.setDrawColor(210, 205, 195);

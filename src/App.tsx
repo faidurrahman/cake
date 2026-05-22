@@ -69,7 +69,7 @@ function AppContent() {
           </div>
           <div>
             <h1 className="font-serif text-xs font-bold tracking-wider uppercase text-[#4A3525] leading-none mb-0.5">
-              Contoh Cake
+              Cake Cu
             </h1>
             <p className="text-[9px] uppercase tracking-wider text-stone-400">Patisserie</p>
           </div>
@@ -161,7 +161,7 @@ function AppContent() {
                   <span className="font-serif text-lg font-bold text-[#4A3525]">C</span>
                 </div>
                 <h2 className="text-base font-serif font-bold text-[#4A3525] uppercase tracking-widest">
-                  Contoh Cake
+                  Cake Cu
                 </h2>
                 <p className="text-[10px] text-stone-400 tracking-wider">Cakes & Patisserie</p>
                 <p className="text-[9px] text-[#8C7D70] mt-0.5">Ruko Contoh, Jakarta</p>

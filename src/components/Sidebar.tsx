@@ -70,7 +70,7 @@ export default function Sidebar({ activeTab, setActiveTab, isOpenMobile, onClose
             </div>
             
             <h1 className="mt-3 font-serif text-lg font-semibold tracking-[0.15em] text-[#4A3525] uppercase">
-              Contoh Cake
+              Cake Cu
             </h1>
             <p className="text-[10px] uppercase tracking-[0.25em] text-stone-400 font-medium mt-0.5">
               Cakes & Patisserie

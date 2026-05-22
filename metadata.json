@@ -1,0 +1,6 @@
+{
+  "name": "Tiffany Cake POS",
+  "description": "Sistem Kasir, Buku Kas, Kelola Produk, dan Laporan Penjualan Harian Terintegrasi Otomatis untuk Tiffany Cake & Patisserie.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
